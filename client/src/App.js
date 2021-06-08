@@ -50,7 +50,7 @@ const App = (props) => {
             </Route>
 
             <Route path="/movies/:id">
-              <Movie />
+              <Movie {...props} setMovies={setMovies} />
             </Route>
 
             <Route path="/movies">
